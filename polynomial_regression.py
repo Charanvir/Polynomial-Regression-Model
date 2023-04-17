@@ -47,3 +47,11 @@ plt.title("Polynomial Regression Model Smooth")
 plt.xlabel("Position Level")
 plt.ylabel("Salary")
 plt.show()
+
+# Predicting a new result with Linear Regression
+linear_prediction = linear_regressor.predict([[6.5]])
+print(linear_prediction)
+
+# Predicting a new result with Polynomial Regression
+polynomial_prediction = lin_reg_2.predict(poly_reg.fit_transform([[6.5]]))
+print(polynomial_prediction)
